@@ -1,16 +1,21 @@
 package com.service;
 
-import static org.junit.jupiter.api.Assertions.*;
+import org.junit.Test;
 
-import org.junit.jupiter.api.Test;
+public class ProductConsumerServiceTest {
 
-class ProductConsumerServiceTest {
-	ProducerConsumerService pc;
 	@Test
-	void test() {
-		pc = new ProducerConsumerService();
-		
-//		fail("Not yet implemented");
+	public void test() {
+		ProducerConsumerService pc = new ProducerConsumerService();
+		pc.main(null);
+		//fail("Not yet implemented");
 	}
-
+	
+/*	@Test
+	public void test2() {
+        BlockingQueue<Message> queue = new ArrayBlockingQueue<>(10);
+		Producer producer = new Producer(queue);
+		producer.run();
+	}
+*/
 }
